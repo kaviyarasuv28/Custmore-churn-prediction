@@ -40,7 +40,7 @@ def user_input():
 df =user_input()
 if st.button("Predict"):
     proba = model.predict_proba(df)[:,1][0]
-    threshold=0.4
+    threshold=0.5
     prediction=1 if proba >= threshold else 0
     st.subheader('Predicted Result')
     st.write('Churn' if prediction == 1 else 'No Churn')
