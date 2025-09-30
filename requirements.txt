@@ -9,3 +9,4 @@ imbalanced-learn
 xgboost
 lightgbm
 joblib
+pickle
